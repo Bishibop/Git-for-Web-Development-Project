@@ -1,0 +1,267 @@
+1. What is Semantic HTML? 
+
+	Semantic HTML is HTML that describes the meaning of the content rather than
+	just it's presentation. Examples would include <p>, <h2>, <blockquote>, <nav>,
+	etc. rather than things like <b> or <div class="nav">.
+
+2. What is HTML used for? 
+
+	HTML is used to describe the content of a webpage so that it can be both read
+	and displayed properly on the page. For example, you would use HTML to
+	distinguish between header text and paragraph text, describe lists, or
+	annotate text to change how it is laid out on the page.
+
+3. What is an attribute and where do we put it? 
+
+	An attribute is a special word used in a HTML tag to modify and control that
+	tag's behavior. It is placed in the opening tag after the name of the element.
+	The syntax is <element attribute="value">content</example>. Examples of
+	attributes would be "href" in an anchor tag or "class" in any tag.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+
+	The h1 tag is used to describe the primary header of the page. Generally, you
+	should only have one of them.
+
+5. Name two tags that have required attributes
+
+	Anchor tags require the "href" attribute, and image tags require the "src"
+	attribute.
+
+6. What do we put in the head of our HTML document? 
+
+	The head element contains metadata for the document, e.g. stylesheets,
+	JavaScript files, charactersets, keywords and descriptions. Tags would be things like
+	<title>, <style>, <meta>, <link>, or <script>.
+
+7. What is an id? 
+
+	An id is an optional attribute used to identify an element in a document. It is
+	used by CSS and JavaScript to manipulate the specified element. It can only be
+	used once on a page. 
+
+8. What elements can I add an id to? 
+
+	Any of them.
+
+9. How many times can I use the same id on a page? 
+
+	Once.
+
+10. What is a class? 
+
+	A class is an optional attribute to identify an element or number of elements in a
+	document. It is used by CSS and JavaScript to manipulate the specified
+	elements. Notably, it can be added to an arbitrary number of element on the page.
+
+11. What elements can I add a class to? 
+
+	Any of them.
+
+12. How many times can I use the same class on a page? 
+
+	As many as you want.
+
+13. How do I get my link to open in a new tab?
+
+	Give the anchor tag a "target" attribute with the value "_blank".
+
+14. What is the alt attribute used for? 
+
+	The alt attribute is used to describe the content of images for use in the
+	case that the imgage cannot be displayed or viewed.
+
+15. How do I reference an id?
+
+	#id
+
+16. What is the difference between a section and a div
+
+	A section groups content together as a semantic unit. Imagine all of the
+	elements contained in an entry in the outline of the page. A div only affects
+	the layout of the page by dividing the content. Specifically in regards to the
+	layout of the page, a section and a div are identical.
+
+17. What is CSS used for? 
+
+	CSS is used to style a document. Change the way elements are laid out the page
+	and how they display.
+
+18. How to we select an element? Example - every h2 on the page
+
+	You just write the element tag in your CSS.
+
+	E.g.
+
+	h2 {
+	  some_style: value;
+	}
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+	A class can be used multiple times in one document. An id may only be used
+	once. You might use a class to style a set of paragraphs in a document. You
+	might use ids to style individual section.
+
+20. How do we select classes in CSS?
+
+	.example-class {
+	  some_style: value;
+	}
+
+21. How do we select a p element with a single class of "human"?
+
+	p.human {
+	  some_style: value;
+	}
+
+22. What is a parent child selector? When would this be useful? 
+
+	A parent child selector is used to select all child elements contained within
+	a parent element, regardless of depth.
+
+	This would be useful if I want to style all of certain type of elements but
+	only within a certain part of the page. For example, if I wanted change the
+	color of all of the links contained in a nav bar.
+
+23. How do you select all links within a div with the class of sidebar?
+
+	.sidebar a
+
+24. What is a pseudo selector?
+
+	A pseudo selector allows you to select elements that exist in a certain state.
+	For example, the first or last child element on a page or the element
+	currently being hovered over by the mouse. Pseudo selectors allow you to
+	reduce the use of class attributes in your document.
+
+25. What do we use the change the spacing between lines?
+
+	The "line-height" property
+
+26. What do we use to change the spacing between letters?
+
+	The "letter-spacing" property 
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+	The "text-transform" property
+
+28. How do I add a 1px border around my div that is dotted and black?
+
+	.my-div {
+	  border: 1px dotted;
+	}
+
+	The default color is black. If you wanted red:
+
+	.my-div {
+	  border: 1px dotted red;
+	}
+
+29. How do I select everything on the page? 
+
+	The universal selector "*"
+
+30. How do I write a comment in CSS?
+
+	// For line comments
+
+	/*
+	  For
+	  Block
+	  Comments
+	*/
+
+31. How do I find out what file I am in, when I am using the command line? 
+
+	I dont understand. If you're in the command line, how would you be in a file?
+	Wouldn't you be in a directory?
+
+	If you wanted to know what your current directory was: "echo $PWD"
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+
+	ls
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+	rm my_file
+
+	You have to be carefule becaues this actually deletes the file rather than
+	move it to the trash. It becomes unrecoverable.
+
+34. Why should I use version control? 
+
+	So that you can keep track of all the changes you've made to a project. So
+	that you can keep track of the last working state of your project. So you can
+	effectively collaborate with others. So you can test where bugs were
+	introduced.
+
+35. How often should I commit to github?
+
+	When I am ready for my work to be reviewed by others.
+
+36. What is the command we would use to push our repo up to github? 
+
+	git push
+
+37. Walk me through Lambda's git flow. 
+
+	1. For the git repo on github
+	2. Invited TL as collaborator
+	3. Copy the clone link
+	4. Clone the repo on your local device in the location you want it with:
+	5. Make a branch titled "firstname-lastname"
+	6. Checkout that branch
+	7. Make your change to your files
+	8. Commit those changes to your branch
+	9. Push that *branch* (not your master) to github
+		git push origin firstname-lastname
+	10. Create a pull request comparing your branch to your master (not
+	    the original LambdaSchool master)
+	11. Invite your TL as a reviewer
+	12. Add the pull request link to your Standup Report
+
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+
+	Inline elements will all sit on a single line. Block elements will each sit on
+	their own line.
+
+2. What happens when an element is positioned absolutely? 
+
+	Absolutely positioned elements have their position offset (left, right, top,
+	bottom) in relation to the edges of their containing block.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+	display: inline-block
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+	Display block: div, p, h1
+	Display inline: span, b, i
+	Display inline-block: img
+
+5. In your own words, explain the box model. What is the fix for the box model? 
+
+	Every HTML element is rendered as a box.
+
+	Each box has it's content and then
+	surrounding boxes of padding, border and margin. The padding is styled space
+	between the content and the border. The border is a generally opaque box
+	surrounding the padding, and then the margin in unstyled space surrounding
+	everything else. 
+
+	These boxes are rendered in the order they appear in the HTML, either
+	horizontally or vertically according to their display properties.
+
+	The box model is fine for simpler documents, but very quickly it becomes
+	difficult to easily get things to display the way you want them to. 
+
+	The fix for the box model is FlexBox which removes a lot of the calculation
+	and element level css required to display things properly or change the way
+	things are displayed. 
