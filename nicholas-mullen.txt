@@ -222,3 +222,46 @@
 	    the original LambdaSchool master)
 	11. Invite your TL as a reviewer
 	12. Add the pull request link to your Standup Report
+
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+
+	Inline elements will all sit on a single line. Block elements will each sit on
+	their own line.
+
+2. What happens when an element is positioned absolutely? 
+
+	Absolutely positioned elements have their position offset (left, right, top,
+	bottom) in relation to the edges of their containing block.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+	display: inline-block
+
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+	Display block: div, p, h1
+	Display inline: span, b, i
+	Display inline-block: img
+
+5. In your own words, explain the box model. What is the fix for the box model? 
+
+	Every HTML element is rendered as a box.
+
+	Each box has it's content and then
+	surrounding boxes of padding, border and margin. The padding is styled space
+	between the content and the border. The border is a generally opaque box
+	surrounding the padding, and then the margin in unstyled space surrounding
+	everything else. 
+
+	These boxes are rendered in the order they appear in the HTML, either
+	horizontally or vertically according to their display properties.
+
+	The box model is fine for simpler documents, but very quickly it becomes
+	difficult to easily get things to display the way you want them to. 
+
+	The fix for the box model is FlexBox which removes a lot of the calculation
+	and element level css required to display things properly or change the way
+	things are displayed. 
